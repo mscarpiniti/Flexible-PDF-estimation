@@ -31,7 +31,7 @@ The implementation of the flexible function $f(x_1, x_2)$ is reached by a  gener
 
 $$\bar{y} = f(\bar{x}_1, \bar{x}_2) = \mathbf{T}_2 \mathbf{M} \left( \mathbf{T}_1 \mathbf{M} \mathbf{Q}_{i_1, i_2} \right)^\top,$$
 
-where $\mathbf{T}_k = \left[u_k^3, u_k^2, u_k, 1\right]$, $k = 1,2$, $\mathbf{Q}_{i_1,i_2}$ is the matrix that collects the local control points $q_{i,k}$ and $\mathbf{M}$ is a $4 \times 4$ matrix which selects which spline base is used, typically B-Spline or Catmull-Rom spline (CR-Spline).
+where $`\mathbf{T}_k = \left[u_k^3, u_k^2, u_k, 1\right]`$, $`k = 1,2`$, $`\mathbf{Q}_{i_1,i_2}`$ is the matrix that collects the local control points $q_{i,k}$ and $\mathbf{M}$ is a $4 \times 4$ matrix which selects which spline base is used, typically B-Spline or Catmull-Rom spline (CR-Spline).
 
 In order to ensure the monotonously increasing characteristic of the overall function, the additional constraint $q_{i,k} < q_{i+1,k}$ must be imposed.
 
