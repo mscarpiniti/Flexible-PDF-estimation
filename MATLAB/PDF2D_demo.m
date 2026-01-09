@@ -42,11 +42,8 @@ SNR = 20;
 data = randi([0, M-1], L, 1);
 txSig = pskmod(data, M, pi/M);  % M-PSK
 % txSig = qammod(data, M);      % M-QAM
-% x = awgn(txSig, SNR);
-% x = randn(2, L)/6;
-% x = rescale(x);
-% x = rescale(x, -1, 1);
-load 8PSK
+x = awgn(txSig, SNR);
+% load 8PSK
 
 % Nonlinearity definition and adaptation ----------------------------------
 sp = LUT2D(x_range, DeltaX, aftype, mu, delta, ep);
