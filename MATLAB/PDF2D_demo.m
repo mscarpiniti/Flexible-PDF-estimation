@@ -1,4 +1,4 @@
-% PDF2D_demo_class.m
+% PDF2D_demo.m
 % 
 % Script used to estimate the joint cumulative density funtion (CDF) 
 % and the joint probability density function (PDF) of a couple of random 
@@ -25,7 +25,7 @@
 % (DIET) -- 'Sapienza' University of Rome
 % -------------------------------------------------------------------------
 
-disp('PDF2D_demo_class');
+disp('PDF2D_demo');
 
 % Parameters --------------------------------------------------------------
 aftype  = 2;        % 1: B-spline, 2: CR-spline

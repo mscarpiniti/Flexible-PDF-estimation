@@ -128,17 +128,10 @@ classdef LUT2D < handle
                     ii1 = obj.i(1) : obj.i(1)+3;
                     ii2 = obj.i(2) : obj.i(2)+3;
                     % Eq. (6)
-                    % num = diag((obj.T(2,:) * obj.M) .* (obj.dT(1,:) * obj.M) + ...
-                    %     (obj.dT(2,:) * obj.M) .* (obj.T(1,:) * obj.M));
                     num = abs(diag((obj.T(2,:) * obj.M) .* (obj.dT(1,:) * obj.M) - ...
                         (obj.dT(2,:) * obj.M) .* (obj.T(1,:) * obj.M)));
-                    % num = (obj.T(2,:) * obj.M).' * (obj.dT(1,:) * obj.M) + ...
-                    %     (obj.dT(2,:) * obj.M).' * (obj.T(1,:) * obj.M);
-                    % den = obj.T(2,:) * obj.M * (obj.dT(1,:) * obj.M * obj.Q(ii1,ii2)).' + ...
-                    %     obj.dT(2,:) * obj.M * (obj.T(1,:) * obj.M * obj.Q(ii1,ii2)).';
                     den = abs(obj.T(2,:) * obj.M * (obj.dT(1,:) * obj.M * obj.Q(ii1,ii2)).' - ...
                         obj.dT(2,:) * obj.M * (obj.T(1,:) * obj.M * obj.Q(ii1,ii2)).');
-                    %obj.Q(ii1,ii2) = obj.Q(ii1,ii2) + obj.mu * num / (den + obj.delta);  % Eq. (7)                    
                     obj.Q(ii1,ii2) = obj.Q(ii1,ii2) + mu_n * num / (den + obj.delta);  % Eq. (7)
                 
                     % Sort the spline

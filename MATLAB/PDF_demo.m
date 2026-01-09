@@ -1,4 +1,4 @@
-% PDF_demo_class.m
+% PDF_demo.m
 % 
 % Script used to estimate the cumulative density funtion (CDF) 
 % and the probability density function (PDF) of a random 
@@ -25,7 +25,7 @@
 % (DIET) -- 'Sapienza' University of Rome
 % -------------------------------------------------------------------------
 
-disp('PDF_demo_class');
+disp('PDF_demo');
 
 % Parameters --------------------------------------------------------------
 aftype  = 1;        % 1: B-spline, 2: CR-spline
