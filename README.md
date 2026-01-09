@@ -39,5 +39,5 @@ The learning algorithm is derived by maximizing the output entropy of the system
 
 
 ## References
-1. M. Scarpiniti, R. Parisi and A. Uncini, "Flexible estimation of probability and cumulative density functions", *Electronics Letters*, Vol. 45, N. 21, 2009.
-2. M. Scarpiniti, R. Parisi and A. Uncini, "Flexible estimation of joint probability and joint cumulative density functions", *Electronics Letters*, Vol. 46, No. 15, p. 1084-1086, July 2010.
+1. M. Scarpiniti, R. Parisi and A. Uncini, "Flexible estimation of probability and cumulative density functions", *Electronics Letters*, Vol. 45, N. 21, 2009. DOI: [https://doi.org/10.1049/el.2009.1274](https://doi.org/10.1049/el.2009.1274)
+2. M. Scarpiniti, R. Parisi and A. Uncini, "Flexible estimation of joint probability and joint cumulative density functions", *Electronics Letters*, Vol. 46, No. 15, p. 1084-1086, July 2010. DOI: [https://doi.org/10.1049/el.2010.1307](https://doi.org/10.1049/el.2010.1307)
