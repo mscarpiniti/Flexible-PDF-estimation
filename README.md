@@ -15,7 +15,7 @@ The implementation of the flexible function $f(x)$ is reached by a spline interp
 
 $$\bar{y} = f(\bar{x}) = \widehat{f}\left( u(\bar{x}), i(\bar{x}) \right) = \mathbf{T} \mathbf{M} \mathbf{Q}_i,$$
 
-where $\mathbf{T} = \left[u^3, u^2, u, 1\right]$, $\mathbf{Q}_i = \left[q_i, q_{i+1}, q_{i+2}, q_{i+3}\right]^\top$ is the vector that collects the local control points and $\mathbf{M}$ is a $4 \times 4$ matrix which selects which spline base is used, typically B-Spline or Catmull-Rom spline (CR-Spline).
+where $\mathbf{T} = \left[u^3, u^2, u, 1\right]$, $`\mathbf{Q}_i = \left[q_i, q_{i+1}, q_{i+2}, q_{i+3}\right]^\top`$ is the vector that collects the local control points and $\mathbf{M}$ is a $4 \times 4$ matrix which selects which spline base is used, typically B-Spline or Catmull-Rom spline (CR-Spline).
 
 In order to ensure the monotonously increasing characteristic of the overall function, the additional constraint $q_i < q_{i+1}$ must be imposed.
 
